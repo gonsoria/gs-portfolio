@@ -1,7 +1,6 @@
 import { Route } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
-// import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
 import Projects from './components/Projects/Projects'
 import Resume from './components/Resume/Resume'
