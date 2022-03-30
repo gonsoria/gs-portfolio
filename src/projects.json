@@ -1,0 +1,41 @@
+{
+    "nokler": {
+        "image": "../../assets/nokler.JPG",
+        "imageAlt": "Nokler Games",
+        "technologies": [
+            "JavaScript",
+            "ReactJS",
+            "ReduxJS",
+            "NodeJS",
+            "Express",
+            "PostgreSQL",
+            "Prisma"
+        ],
+        "title": "NOKLER GAMES",
+        "description": "Nøkler is an online platform dedicated to the sale of digital keys for games."
+    },
+    "gamerspot": {
+        "imageAlt": "Gamerspot",
+        "technologies": [
+            "JavaScript",
+            "ReactJS",
+            "ReduxJS",
+            "NodeJS",
+            "Express",
+            "PostgreSQL",
+            "Sequelize"
+        ],
+        "title": "GAMERSPOT",
+        "description": "Single page application with video games information. "
+    },
+    "todolist": {
+        "imageAlt": "toDolist App",
+        "technologies": [
+            "JavaScript",
+            "ReactJS",
+            "ReduxJS"
+        ],
+        "title": "TODO-LIST APP",
+        "description": "Simple front-end application."
+    }
+}
