@@ -116,6 +116,7 @@ function Skills() {
                             alt='PRISMA'
                             display='inline-block'
                             pl={2}
+                            pt={{ base: '1', xxs: '0' }}
                         />
                         <Text fontSize='lg' pt={4} pb={1}> Front End Stack</Text>
                         <Image

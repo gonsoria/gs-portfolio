@@ -6,6 +6,7 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Contact from '../Contact/Contact'
 import Skills from '../Skills/Skills'
 
 function NavBar() {
@@ -20,20 +21,22 @@ function NavBar() {
                         >Home</Text>
                     </Link>
                 </GridItem>
+
                 <GridItem>
                     <Text fontSize='lg' py={1} _hover={{
                         color: '#a6a6a6'
                     }}
                     >Projects</Text>
                 </GridItem>
+
                 <GridItem>
                     <Skills />
                 </GridItem>
+
                 <GridItem>
-                    <Text fontSize='lg' py={1} _hover={{
-                        color: '#a6a6a6'
-                    }}>Contact</Text>
+                    <Contact />
                 </GridItem>
+
             </Grid>
         </Flex >
     )
