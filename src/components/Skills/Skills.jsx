@@ -26,7 +26,9 @@ import slack from '../../assets/tools/slack.svg'
 import notion from '../../assets/tools/notion.png'
 import git from '../../assets/tools/git.png'
 import github from '../../assets/tools/github.png'
-
+import chakra from '../../assets/frontend/chakra.png'
+import botstrap from '../../assets/frontend/bootstrap.png'
+import npm from '../../assets/tools/npm.png'
 
 function Skills() {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -47,7 +49,7 @@ function Skills() {
                 placement='right'
                 onClose={onClose}
                 finalFocusRef={btnRef}
-                size='sm'
+                size='md'
             >
                 <DrawerOverlay />
                 <DrawerContent>
@@ -63,6 +65,7 @@ function Skills() {
                             src={js}
                             alt='JAVASCRIPT'
                             display='inline-block'
+                            title='JavaScript'
                         />
                         <Image
                             height='35px'
@@ -71,6 +74,7 @@ function Skills() {
                             alt='TYPESCRIPT'
                             display='inline-block'
                             px={5}
+                            title='TypeScrip'
                         />
 
 
@@ -82,6 +86,7 @@ function Skills() {
                             alt='NODEJS'
                             display='inline-block'
                             pb={2}
+                            title='Node.js'
                         />
                         <Image
                             height='35px'
@@ -90,6 +95,7 @@ function Skills() {
                             display='inline-block'
                             alt='EXPRESS'
                             px={5}
+                            title='Express'
                         />
 
                         <Text fontSize='lg' pt={4} pb={1}> Data Base | ORM</Text>
@@ -100,6 +106,7 @@ function Skills() {
                             alt='POSTGRESQL'
                             display='inline-block'
                             pr={2.5}
+                            title='PostgreSQL'
                         />
                         <Image
                             height='40px'
@@ -108,6 +115,7 @@ function Skills() {
                             alt='SEQUELIZE'
                             display='inline-block'
                             px={2.5}
+                            title='Sequelize'
                         />
                         <Image
                             height='40px'
@@ -117,6 +125,7 @@ function Skills() {
                             display='inline-block'
                             pl={2}
                             pt={{ base: '1', xxs: '0' }}
+                            title='Prisma'
                         />
                         <Text fontSize='lg' pt={4} pb={1}> Front End Stack</Text>
                         <Image
@@ -126,6 +135,7 @@ function Skills() {
                             alt='CSS3'
                             display='inline-block'
                             pr={2.5}
+                            title='CSS'
                         />
                         <Image
                             height='45px'
@@ -134,6 +144,7 @@ function Skills() {
                             alt='HTML5'
                             display='inline-block'
                             px={2.5}
+                            title='HTML'
                         />
                         <Image
                             height='45px'
@@ -142,6 +153,7 @@ function Skills() {
                             alt='REACT'
                             display='inline-block'
                             px={2.5}
+                            title='React JS'
                         />
                         <Image
                             height='57px'
@@ -151,10 +163,33 @@ function Skills() {
                             display='inline-block'
                             px={2.5}
                             pt={2}
+                            title='Redux JS'
+                        />
+                        <br />
+
+                        <Image
+                            height='40px'
+                            objectFit='cover'
+                            src={chakra}
+                            alt='CHAKRA'
+                            display='inline-block'
+                            mr={2.5}
+                            title='Chakra UI'
+
+                        />
+                        <Image
+                            height='45px'
+                            objectFit='cover'
+                            src={botstrap}
+                            alt='BOOTSTRAP'
+                            display='inline-block'
+                            ml={2.5}
+                            mt={2}
+                            title='Bootstrap'
                         />
 
 
-                        <Text fontSize='lg' pt={4} pb={1}>Revision Control | Management</Text>
+                        <Text fontSize='lg' pt={4} pb={1}>Revision Control | Management | Tools</Text>
                         <Box alignItems='center'>
                             <Image
                                 height='35px'
@@ -164,6 +199,7 @@ function Skills() {
                                 display='inline-block'
                                 pr={2.5}
                                 pt={1}
+                                title='Git'
 
                             />
                             <Image
@@ -174,6 +210,7 @@ function Skills() {
                                 display='inline-block'
                                 px={2.5}
                                 pb={1}
+                                title='GitHub'
                             />
                             <Image
                                 height='40px'
@@ -183,6 +220,7 @@ function Skills() {
                                 display='inline-block'
                                 px={2.5}
                                 pt={1}
+                                title='Slack'
                             />
                             <Image
                                 height='40px'
@@ -192,6 +230,17 @@ function Skills() {
                                 display='inline-block'
                                 px={2.5}
                                 pt={1}
+                                title='Notion'
+                            />
+                            <Image
+                                height='30px'
+                                objectFit='cover'
+                                src={npm}
+                                alt='NPM'
+                                display='inline-block'
+
+                                pt={1}
+                                title='npm'
                             />
                         </Box>
                     </DrawerBody>

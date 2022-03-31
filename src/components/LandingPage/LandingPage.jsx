@@ -14,7 +14,7 @@ import {
 function LandingPage() {
     return (
         < >
-            <Flex direction='column' textAlign='left' height='fit-content' width={{ base: 'fit-content', md: '85vw' }} mx='auto' py={{ xxs: 'calc(50vh - 213px)', xs: 'calc(50vh - 209px)', sm: 'calc(50vh - 202px)', md: 'calc(50vh - 202px)', lg: 'calc(50vh - 202px)' }} paddingTop={{ base: '50px' }} paddingBottom={{ base: '50px' }}>
+            <Flex direction='column' textAlign='left' height='fit-content' width={{ base: 'fit-content', md: '90vw' }} mx='auto' py={{ xxs: 'calc(50vh - 213px)', xs: 'calc(50vh - 209px)', sm: 'calc(50vh - 202px)', md: 'calc(50vh - 202px)', lg: 'calc(50vh - 202px)' }} paddingTop={{ base: '50px' }} paddingBottom={{ base: '50px' }}>
                 <Box >
                     <Heading size='lg' fontFamily="heading" ><Text display='inline-block'>
                         Hello there,</Text>  my name is</Heading>
@@ -29,7 +29,7 @@ function LandingPage() {
                     </Text>
                 </Box>
             </Flex >
-            <Flex justifyContent={{ base: 'center', xxs: 'flex-end' }} width={{ base: '75vw', xxs: '92.5vw' }} marginLeft={{ base: '12vw', xxs: '7.5vw' }} my='16px'>
+            <Flex justifyContent={{ base: 'center', xxs: 'flex-end' }} width={{ base: '76vw', xxs: '90vw' }} mx={{ base: '12vw', xxs: '5vw' }} my='16px'>
                 <Box textAlign='center'>
                     <Link to='/about'>
                         <Button size='sm' color="black" bg='#a6a6a6' _hover={{ bg: '#d9d9d9' }}  >

@@ -11,7 +11,7 @@ import Skills from '../Skills/Skills'
 
 function NavBar() {
     return (
-        <Flex px={6} py={3} position='relative' justifyContent='flex-end'>
+        <Flex px={6} py={3} position='relative' justifyContent='flex-end' mx={{ base: '12vw', xxs: '5vw' }}>
             <Grid templateColumns='repeat(8, 1fr)' gap={6} textAlign='center' >
                 <GridItem colStart={5} >
                     <Link to='/'>
