@@ -1,8 +1,5 @@
-.App {
-  height: 100vh;
-}
-
 #stars {
+  z-index: -200;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -491,6 +488,7 @@
 }
 
 #stars3 {
+
   width: 1px;
   height: 1px;
   background: transparent;
@@ -524,6 +522,7 @@
 }
 
 #stars3:after {
+
   content: '';
   position: absolute;
   top: 200px;
@@ -562,6 +561,7 @@
 @keyframes animStar {
   from {
     transform: translateY(0px);
+    z-index: -100;
   }
 
   to {

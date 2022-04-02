@@ -23,10 +23,12 @@ function NavBar() {
                 </GridItem>
 
                 <GridItem>
-                    <Text fontSize='lg' py={1} _hover={{
-                        color: '#a6a6a6'
-                    }}
-                    >Projects</Text>
+                    <Link to='/projects'>
+                        <Text fontSize='lg' py={1} _hover={{
+                            color: '#a6a6a6'
+                        }}
+                        >Projects</Text>
+                    </Link>
                 </GridItem>
 
                 <GridItem>
