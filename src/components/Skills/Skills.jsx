@@ -75,9 +75,10 @@ function Skills() {
                     }} />
                     <DrawerHeader fontSize='30px' pb={0} py={1} bg='#0d0d0d'
                     >TECH SKILLS
-                        <Button h='30px' mb='7.5px' ml='15px' _hover={{
-                            bg: "#f2f2f2", color: '#0d0d0d',
-                        }} onClick={handleSkills}> {
+                        <Button h='30px' mb='7.5px' ml='15px' bg='#262626'
+                            _hover={{
+                                bg: "#f2f2f2", color: '#0d0d0d',
+                            }} onClick={handleSkills}> {
                                 skillsRender === 'icon' ? 'List' : 'Icons'
                             } </Button>
                     </DrawerHeader>

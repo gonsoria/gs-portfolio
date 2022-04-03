@@ -140,9 +140,10 @@ function Contact() {
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
                             CONTACT ME
-                            <Button h='30px' mb='7.5px' ml='15px' _hover={{
-                                bg: "#f2f2f2", color: '#0d0d0d',
-                            }} onClick={handleContactInfo}> {
+                            <Button h='30px' mb='7.5px' ml='15px' bg='#262626'
+                                _hover={{
+                                    bg: "#f2f2f2", color: '#0d0d0d',
+                                }} onClick={handleContactInfo}> {
                                     contactInfo === false ? 'Info' : 'Form'
                                 } </Button>
                         </DrawerHeader>
@@ -171,8 +172,10 @@ function Contact() {
                                             <Box>
                                                 <FormLabel htmlFor='username'>Name</FormLabel>
                                                 <InputGroup>
-                                                    <InputLeftAddon bg='#262626'> <FaUserAlt /> </InputLeftAddon>
+                                                    <InputLeftAddon bg='#262626' border='none'
+                                                    > <FaUserAlt /> </InputLeftAddon>
                                                     <Input
+                                                        border='none'
                                                         ref={firstField}
                                                         id='username'
                                                         placeholder='Please enter your name'
@@ -186,8 +189,11 @@ function Contact() {
                                             <Box>
                                                 <FormLabel htmlFor='url'>Email</FormLabel>
                                                 <InputGroup>
-                                                    <InputLeftAddon bg='#262626'><AtSignIcon /></InputLeftAddon>
+                                                    <InputLeftAddon bg='#262626' border='none'
+                                                    ><AtSignIcon /></InputLeftAddon>
                                                     <Input
+                                                        border='none'
+
                                                         type='email'
                                                         id='email'
                                                         placeholder='Please enter your email'
@@ -202,6 +208,8 @@ function Contact() {
                                                 <FormLabel >Subject</FormLabel>
                                                 <InputGroup>
                                                     <Input
+                                                        border='none'
+
                                                         id='url'
                                                         placeholder='Subject'
                                                         name='subject'
@@ -214,6 +222,7 @@ function Contact() {
                                             <Box>
                                                 <FormLabel htmlFor='desc'>Message</FormLabel>
                                                 <Textarea
+                                                    border='none'
                                                     id='desc'
                                                     placeholder='Type your message here...'
                                                     minH='130px'
@@ -230,6 +239,7 @@ function Contact() {
                                         }
                                         <Spacer />
                                         <Button
+                                            bg='#262626'
                                             _hover={{
                                                 bg: "#f2f2f2", color: '#0d0d0d',
                                             }}

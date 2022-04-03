@@ -53,19 +53,21 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
                                 </GridItem>
                                 <GridItem mt='auto' mb={{ base: '15px' }} textAlign={{ base: 'center', lg: 'end' }}>
                                     <Link href={project[0]?.deployUrl} isExternal>
-                                        <Button size='sm' _hover={{
-                                            bg: "#f2f2f2", color: '#0d0d0d',
-                                        }} isDisabled={
-                                            project[0]?.deployUrl === '' ? true : false
-                                        }
+                                        <Button size='sm' bg='#262626'
+                                            _hover={{
+                                                bg: "#f2f2f2", color: '#0d0d0d',
+                                            }} isDisabled={
+                                                project[0]?.deployUrl === '' ? true : false
+                                            }
                                         >
                                             Deploy
                                         </Button>
                                     </Link>
                                     <Link href={project[0]?.repositoryUrl} isExternal >
-                                        <Button size='sm' ml={5} _hover={{
-                                            bg: "#f2f2f2", color: '#0d0d0d',
-                                        }}>
+                                        <Button size='sm' ml={5} bg='#262626'
+                                            _hover={{
+                                                bg: "#f2f2f2", color: '#0d0d0d',
+                                            }}>
                                             Repository
                                         </Button>
                                     </Link>

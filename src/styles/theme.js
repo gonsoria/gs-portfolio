@@ -25,14 +25,6 @@ const theme = extendTheme({
           minHeight:"100vh", 
   
       },
-      button: {
-        background:'#262626',
-        color: '#f2f2f2',
-      },
-      input: {
-        border: 'none',
-        outline: 'none'
-      }
     },
   },
 })
