@@ -31,7 +31,7 @@ function LandingPage() {
                 <Box alignContent='center' mt={{ base: '30px', xxs: '0' }}>
 
                     <Box px={5} display={{ base: 'none', xxs: 'inline-block' }} >
-                        <Tooltip label='This portfolio was develope with ReactJs, using Chakra UI for styling components and transitions.' hasArrow arrowSize={15} placement='left-start' bg='#bfbfbf' color='#0d0d0d'>
+                        <Tooltip label='This portfolio was developed with ReactJs, using Chakra UI for styling components and transitions.' hasArrow arrowSize={15} placement='left-start' bg='#bfbfbf' color='#0d0d0d'>
                             <Box >
                                 <BsInfoCircleFill
                                     fontSize={30}
