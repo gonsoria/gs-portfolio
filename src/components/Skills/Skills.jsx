@@ -338,33 +338,44 @@ function Skills() {
                             <DrawerBody bg='#0d0d0d' >
                                 <UnorderedList m={0}>
                                     <Text fontSize='lg' py={1} decoration='underline'>Programming Lenguages</Text>
-                                    <ListItem mx={6}>JavaScript</ListItem>
-                                    <ListItem mx={6}>TypeScript</ListItem>
-                                    <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Back End Stack</Text>
-                                    <ListItem mx={6}>Node.js</ListItem>
-                                    <ListItem mx={6}>Express</ListItem>
-                                    <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Data Base | ORM</Text>
-                                    <ListItem mx={6}>PostgreSQL</ListItem>
-                                    <ListItem mx={6}>Sequelize</ListItem>
-                                    <ListItem mx={6}>Prisma</ListItem>
-                                    <Text fontSize='lg' pt={4} pb={1} decoration='underline' >Front End Stack</Text>
-                                    <SimpleGrid columns={{ base: 2, xxs: 3 }}>
-                                        <ListItem mx={6}>HTML5</ListItem>
-                                        <ListItem mx={6}>CSS3</ListItem>
-                                        <ListItem mx={6}>ReactJs</ListItem>
-                                        <ListItem mx={6}>ReduxJs</ListItem>
-                                        <ListItem mx={6}>Chakra UI</ListItem>
-                                        <ListItem mx={6}>Bootstrap</ListItem>
+                                    <Box pb={10} pt={1}>
+                                        <ListItem mx={6}>JavaScript</ListItem>
+                                        <ListItem mx={6}>TypeScript</ListItem>
+                                    </Box>
+                                    <SimpleGrid columns={2}>
+                                        <Text fontSize='lg' decoration='underline'>Back End Stack</Text>
+                                        <Text fontSize='lg' decoration='underline'>Data Base | ORM</Text>
+                                        <Box pb={10} pt={1}>
+                                            <ListItem mx={6}>Node.js</ListItem>
+                                            <ListItem mx={6}>Express</ListItem>
+                                        </Box>
+                                        <Box pb={10} pt={1}>
+                                            <ListItem mx={6}>PostgreSQL</ListItem>
+                                            <ListItem mx={6}>Sequelize</ListItem>
+                                            <ListItem mx={6}>Prisma</ListItem>
+                                        </Box>
                                     </SimpleGrid>
-                                    <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Revision Control | Management | Tools</Text>
-                                    <SimpleGrid columns={{ base: 2, xxs: 3 }} spacing={1}>
-                                        <ListItem mx={6}>Git</ListItem>
-                                        <ListItem mx={6}>GitHub</ListItem>
-                                        <ListItem mx={6}>NPM</ListItem>
-                                        <ListItem mx={6}>Slack</ListItem>
-                                        <ListItem mx={6}>Notion</ListItem>
-                                    </SimpleGrid>
-
+                                    <Text fontSize='lg' decoration='underline' >Front End Stack</Text>
+                                    <Box pb={10} pt={1}>
+                                        <SimpleGrid columns={{ base: 2, xxs: 3 }}>
+                                            <ListItem mx={6}>HTML5</ListItem>
+                                            <ListItem mx={6}>CSS3</ListItem>
+                                            <ListItem mx={6}>ReactJs</ListItem>
+                                            <ListItem mx={6}>ReduxJs</ListItem>
+                                            <ListItem mx={6}>Chakra UI</ListItem>
+                                            <ListItem mx={6}>Bootstrap</ListItem>
+                                        </SimpleGrid>
+                                    </Box>
+                                    <Text fontSize='lg' decoration='underline'>Revision Control | Management | Tools</Text>
+                                    <Box pb={10} pt={1}>
+                                        <SimpleGrid columns={{ base: 2, xxs: 3 }} spacing={1}>
+                                            <ListItem mx={6}>Git</ListItem>
+                                            <ListItem mx={6}>GitHub</ListItem>
+                                            <ListItem mx={6}>NPM</ListItem>
+                                            <ListItem mx={6}>Slack</ListItem>
+                                            <ListItem mx={6}>Notion</ListItem>
+                                        </SimpleGrid>
+                                    </Box>
                                 </UnorderedList>
 
                             </DrawerBody>

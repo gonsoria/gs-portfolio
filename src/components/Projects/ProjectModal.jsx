@@ -23,7 +23,7 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
     return (
         <>
             <Modal isOpen={isOpen} onClose={onClose} size='5xl'  >
-                <ModalOverlay />
+                <ModalOverlay backdropFilter='auto' backdropBlur='5px' />
                 <ModalContent bg='#0d0d0d'  >
                     <Box display='flex' justifyContent='flex-end' >
                         <ModalCloseButton position='relative' _hover={{
