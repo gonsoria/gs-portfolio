@@ -36,7 +36,7 @@ function AnimatedComponents() {
             </Box>
 
             <Box width={['271px', '339px', '339px', '407px', '542px', '610.84px']} align='justify' paddingTop={{ base: '20px', md: '0' }} display='inline-block' >
-                <Text as='i' fontSize='md' >
+                <Text fontSize='md' >
                     I'm a Full Stack Web Developer based in La Plata, Bs As. Argentina. I have experience building web applications with Javascript / Reactjs / Nodejs and some others cool frameworks and libraries. I'm always learning about new things and looking forward to collaborate on development projects.
                 </Text>
             </Box>
