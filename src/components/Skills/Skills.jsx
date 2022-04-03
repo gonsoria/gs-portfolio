@@ -51,7 +51,7 @@ function Skills() {
     return (
         <>
             <Text
-                fontSize='lg'
+                fontSize={{ base: '3xl', xs: 'lg' }}
                 onClick={onOpen}
                 py={1} _hover={{
                     color: '#a6a6a6',
@@ -66,13 +66,15 @@ function Skills() {
                 size='md'
                 closeOnOverlayClick={false}
                 closeOnEsc={false}
+                autoFocus={false}
 
             >
                 <DrawerOverlay />
                 <DrawerContent>
-                    <DrawerCloseButton py={3} outline='none' _hover={{
-                        bg: "#f2f2f2", color: '#0d0d0d',
-                    }} />
+                    <DrawerCloseButton fontSize='xl'
+                        py={3} outline='none' _hover={{
+                            bg: "#f2f2f2", color: '#0d0d0d',
+                        }} />
                     <DrawerHeader fontSize='30px' pb={0} py={1} bg='#0d0d0d'
                     >TECH SKILLS
                         <Button h='30px' mb='7.5px' ml='15px' bg='#262626'
@@ -273,7 +275,7 @@ function Skills() {
                                 </Box>
                             </DrawerBody >
                             :
-                            <DrawerBody bg='#0d0d0d' m>
+                            <DrawerBody bg='#0d0d0d' >
                                 <UnorderedList m={0}>
                                     <Text fontSize='lg' py={1} decoration='underline'>Programming Lenguage</Text>
                                     <ListItem mx={6}>JavaScript</ListItem>
@@ -286,7 +288,7 @@ function Skills() {
                                     <ListItem mx={6}>Sequelize</ListItem>
                                     <ListItem mx={6}>Prisma</ListItem>
                                     <Text fontSize='lg' pt={4} pb={1} decoration='underline' >Front End Stack</Text>
-                                    <SimpleGrid columns={3}>
+                                    <SimpleGrid columns={{ base: 2, xxs: 3 }}>
                                         <ListItem mx={6}>HTML5</ListItem>
                                         <ListItem mx={6}>CSS3</ListItem>
                                         <ListItem mx={6}>ReactJs</ListItem>
@@ -295,7 +297,7 @@ function Skills() {
                                         <ListItem mx={6}>Bootstrap</ListItem>
                                     </SimpleGrid>
                                     <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Revision Control | Management | Tools</Text>
-                                    <SimpleGrid columns={3} spacing={1}>
+                                    <SimpleGrid columns={{ base: 2, xxs: 3 }} spacing={1}>
                                         <ListItem mx={6}>Git</ListItem>
                                         <ListItem mx={6}>GitHub</ListItem>
                                         <ListItem mx={6}>NPM</ListItem>

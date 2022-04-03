@@ -114,7 +114,7 @@ function Contact() {
     return (
         <>
             <Text
-                fontSize='lg'
+                fontSize={{ base: '3xl', xs: 'lg' }}
                 onClick={onOpen}
                 py={1} _hover={{
                     color: '#a6a6a6',
@@ -130,13 +130,16 @@ function Contact() {
                 size='md'
                 closeOnOverlayClick={false}
                 closeOnEsc={false}
+                autoFocus={false}
+
             >
                 <DrawerOverlay />
                 <form ref={refForm} onSubmit={sendEmail}>
                     <DrawerContent>
-                        <DrawerCloseButton py={3} outline='none' onClick={() => setMailStatus()} _hover={{
-                            bg: "#f2f2f2", color: '#0d0d0d',
-                        }} />
+                        <DrawerCloseButton fontSize='xl'
+                            py={3} outline='none' onClick={() => setMailStatus()} _hover={{
+                                bg: "#f2f2f2", color: '#0d0d0d',
+                            }} />
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
                             CONTACT ME
@@ -176,6 +179,7 @@ function Contact() {
                                                     > <FaUserAlt /> </InputLeftAddon>
                                                     <Input
                                                         border='none'
+                                                        bg='#262626'
                                                         ref={firstField}
                                                         id='username'
                                                         placeholder='Please enter your name'
@@ -193,7 +197,7 @@ function Contact() {
                                                     ><AtSignIcon /></InputLeftAddon>
                                                     <Input
                                                         border='none'
-
+                                                        bg='#262626'
                                                         type='email'
                                                         id='email'
                                                         placeholder='Please enter your email'
@@ -209,7 +213,7 @@ function Contact() {
                                                 <InputGroup>
                                                     <Input
                                                         border='none'
-
+                                                        bg='#262626'
                                                         id='url'
                                                         placeholder='Subject'
                                                         name='subject'
@@ -223,6 +227,7 @@ function Contact() {
                                                 <FormLabel htmlFor='desc'>Message</FormLabel>
                                                 <Textarea
                                                     border='none'
+                                                    bg='#262626'
                                                     id='desc'
                                                     placeholder='Type your message here...'
                                                     minH='130px'
