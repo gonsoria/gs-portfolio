@@ -97,7 +97,7 @@ function Skills() {
                                         pr={2.5}
                                         display='inline-block'
                                         title='JavaScript'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
                                     />
                                     <Image
@@ -108,7 +108,7 @@ function Skills() {
                                         display='inline-block'
                                         px={2.5}
                                         title='TypeScrip'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -125,7 +125,7 @@ function Skills() {
                                         pb={2}
                                         pr={2.5}
                                         title='Node.js'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -137,7 +137,7 @@ function Skills() {
                                         alt='EXPRESS'
                                         px={2.5}
                                         title='Express'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -153,7 +153,7 @@ function Skills() {
                                         display='inline-block'
                                         pr={2.5}
                                         title='PostgreSQL'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -165,7 +165,7 @@ function Skills() {
                                         display='inline-block'
                                         px={2.5}
                                         title='Sequelize'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -178,7 +178,7 @@ function Skills() {
                                         pl={2}
                                         pt={{ base: '1', xxs: '0' }}
                                         title='Prisma'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -194,7 +194,7 @@ function Skills() {
                                         display='inline-block'
                                         pr={2.5}
                                         title='CSS'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -206,7 +206,7 @@ function Skills() {
                                         display='inline-block'
                                         px={2.5}
                                         title='HTML'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -218,7 +218,7 @@ function Skills() {
                                         display='inline-block'
                                         px={2.5}
                                         title='React JS'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -231,7 +231,7 @@ function Skills() {
                                         px={2.5}
                                         pt={2}
                                         title='Redux JS'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -244,7 +244,7 @@ function Skills() {
                                         display='inline-block'
                                         mx={2.5}
                                         title='Chakra UI'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
 
@@ -258,7 +258,7 @@ function Skills() {
                                         ml={2.5}
                                         mt={2}
                                         title='Bootstrap'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -275,7 +275,7 @@ function Skills() {
                                         pr={2.5}
                                         pt={1}
                                         title='Git'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
 
@@ -289,7 +289,7 @@ function Skills() {
                                         px={2.5}
                                         pb={1}
                                         title='GitHub'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -302,7 +302,7 @@ function Skills() {
                                         px={2.5}
                                         pt={1}
                                         title='Slack'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -315,7 +315,7 @@ function Skills() {
                                         px={2.5}
                                         pt={1}
                                         title='Notion'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
@@ -328,7 +328,7 @@ function Skills() {
                                         px={2.5}
                                         pt={1}
                                         title='npm'
-                                        filter='grayscale(85%)'
+                                        filter='grayscale(20%)'
                                         _hover={{ filter: 'grayscale(0)' }}
 
                                     />
