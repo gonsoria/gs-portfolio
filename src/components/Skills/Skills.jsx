@@ -86,143 +86,188 @@ function Skills() {
                     </DrawerHeader>
                     {
                         skillsRender === 'icon' ?
-                            <DrawerBody bg='#0d0d0d'
-                            >
-                                <Text fontSize='lg' py={1} decoration='underline'> Programming Lenguages</Text>
-                                <Image
-                                    height='35px'
-                                    objectFit='cover'
-                                    src={js}
-                                    alt='JAVASCRIPT'
-                                    display='inline-block'
-                                    title='JavaScript'
-                                />
-                                <Image
-                                    height='35px'
-                                    objectFit='cover'
-                                    src={ts}
-                                    alt='TYPESCRIPT'
-                                    display='inline-block'
-                                    px={5}
-                                    title='TypeScrip'
-                                />
+                            <DrawerBody bg='#0d0d0d' >
+                                <Text fontSize='lg' decoration='underline'> Programming Lenguages</Text>
+                                <Box pb={10} pt={2}>
+                                    <Image
+                                        height='30px'
+                                        objectFit='cover'
+                                        src={js}
+                                        alt='JAVASCRIPT'
+                                        pr={2.5}
+                                        display='inline-block'
+                                        title='JavaScript'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+                                    />
+                                    <Image
+                                        height='30px'
+                                        objectFit='cover'
+                                        src={ts}
+                                        alt='TYPESCRIPT'
+                                        display='inline-block'
+                                        px={2.5}
+                                        title='TypeScrip'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
 
+                                    />
+                                </Box>
 
-                                <Text fontSize='lg' pt={4} pb={1} decoration='underline'> Back End Stack</Text>
-                                <Image
-                                    height='35px'
-                                    objectFit='cover'
-                                    src={nodejs}
-                                    alt='NODEJS'
-                                    display='inline-block'
-                                    pb={2}
-                                    title='Node.js'
-                                />
-                                <Image
-                                    height='35px'
-                                    objectFit='cover'
-                                    src={expressIcon}
-                                    display='inline-block'
-                                    alt='EXPRESS'
-                                    px={5}
-                                    title='Express'
-                                />
+                                <Text fontSize='lg' decoration='underline'> Back End Stack</Text>
+                                <Box pb={10} pt={1}>
+                                    <Image
+                                        height='30px'
+                                        objectFit='cover'
+                                        src={nodejs}
+                                        alt='NODEJS'
+                                        display='inline-block'
+                                        pb={2}
+                                        pr={2.5}
+                                        title='Node.js'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
 
-                                <Text fontSize='lg' pt={4} pb={1} decoration='underline'> Data Base | ORM</Text>
-                                <Image
-                                    height='40px'
-                                    objectFit='cover'
-                                    src={psql}
-                                    alt='POSTGRESQL'
-                                    display='inline-block'
-                                    pr={2.5}
-                                    title='PostgreSQL'
-                                />
-                                <Image
-                                    height='40px'
-                                    objectFit='contain'
-                                    src={sequelize}
-                                    alt='SEQUELIZE'
-                                    display='inline-block'
-                                    px={2.5}
-                                    title='Sequelize'
-                                />
-                                <Image
-                                    height='40px'
-                                    objectFit='cover'
-                                    src={prisma}
-                                    alt='PRISMA'
-                                    display='inline-block'
-                                    pl={2}
-                                    pt={{ base: '1', xxs: '0' }}
-                                    title='Prisma'
-                                />
-                                <Text fontSize='lg' pt={4} pb={1} decoration='underline'> Front End Stack</Text>
-                                <Image
-                                    height='45px'
-                                    objectFit='cover'
-                                    src={css}
-                                    alt='CSS3'
-                                    display='inline-block'
-                                    pr={2.5}
-                                    title='CSS'
-                                />
-                                <Image
-                                    height='45px'
-                                    objectFit='cover'
-                                    src={htmlIcon}
-                                    alt='HTML5'
-                                    display='inline-block'
-                                    px={2.5}
-                                    title='HTML'
-                                />
-                                <Image
-                                    height='45px'
-                                    objectFit='cover'
-                                    src={reactIcon}
-                                    alt='REACT'
-                                    display='inline-block'
-                                    px={2.5}
-                                    title='React JS'
-                                />
-                                <Image
-                                    height='57px'
-                                    objectFit='cover'
-                                    src={reduxIcon}
-                                    alt='REDUX'
-                                    display='inline-block'
-                                    px={2.5}
-                                    pt={2}
-                                    title='Redux JS'
-                                />
-                                <br />
+                                    />
+                                    <Image
+                                        height='30px'
+                                        objectFit='cover'
+                                        src={expressIcon}
+                                        display='inline-block'
+                                        alt='EXPRESS'
+                                        px={2.5}
+                                        title='Express'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
 
-                                <Image
-                                    height='40px'
-                                    objectFit='cover'
-                                    src={chakra}
-                                    alt='CHAKRA'
-                                    display='inline-block'
-                                    mr={2.5}
-                                    title='Chakra UI'
+                                    />
+                                </Box>
 
-                                />
-                                <Image
-                                    height='45px'
-                                    objectFit='cover'
-                                    src={botstrap}
-                                    alt='BOOTSTRAP'
-                                    display='inline-block'
-                                    ml={2.5}
-                                    mt={2}
-                                    title='Bootstrap'
-                                />
-
-
-                                <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Revision Control | Management | Tools</Text>
-                                <Box alignItems='center'>
+                                <Text fontSize='lg' decoration='underline'> Data Base | ORM</Text>
+                                <Box pb={10} pt={1}>
                                     <Image
                                         height='35px'
+                                        objectFit='cover'
+                                        src={psql}
+                                        alt='POSTGRESQL'
+                                        display='inline-block'
+                                        pr={2.5}
+                                        title='PostgreSQL'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                    <Image
+                                        height='35px'
+                                        objectFit='contain'
+                                        src={sequelize}
+                                        alt='SEQUELIZE'
+                                        display='inline-block'
+                                        px={2.5}
+                                        title='Sequelize'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                    <Image
+                                        height='35px'
+                                        objectFit='cover'
+                                        src={prisma}
+                                        alt='PRISMA'
+                                        display='inline-block'
+                                        pl={2}
+                                        pt={{ base: '1', xxs: '0' }}
+                                        title='Prisma'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                </Box>
+
+                                <Text fontSize='lg' decoration='underline'> Front End Stack</Text>
+                                <Box pb={10} pt={1}>
+                                    <Image
+                                        height='40px'
+                                        objectFit='cover'
+                                        src={css}
+                                        alt='CSS3'
+                                        display='inline-block'
+                                        pr={2.5}
+                                        title='CSS'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                    <Image
+                                        height='40px'
+                                        objectFit='cover'
+                                        src={htmlIcon}
+                                        alt='HTML5'
+                                        display='inline-block'
+                                        px={2.5}
+                                        title='HTML'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                    <Image
+                                        height='40px'
+                                        objectFit='cover'
+                                        src={reactIcon}
+                                        alt='REACT'
+                                        display='inline-block'
+                                        px={2.5}
+                                        title='React JS'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                    <Image
+                                        height='52px'
+                                        objectFit='cover'
+                                        src={reduxIcon}
+                                        alt='REDUX'
+                                        display='inline-block'
+                                        px={2.5}
+                                        pt={2}
+                                        title='Redux JS'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+
+                                    <Image
+                                        height='35px'
+                                        objectFit='cover'
+                                        src={chakra}
+                                        alt='CHAKRA'
+                                        display='inline-block'
+                                        mx={2.5}
+                                        title='Chakra UI'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+
+                                    />
+                                    <Image
+                                        height='40px'
+                                        objectFit='cover'
+                                        src={botstrap}
+                                        alt='BOOTSTRAP'
+                                        display='inline-block'
+                                        ml={2.5}
+                                        mt={2}
+                                        title='Bootstrap'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
+                                    />
+                                </Box>
+
+                                <Text fontSize='lg' decoration='underline'>Revision Control | Management | Tools</Text>
+                                <Box alignItems='center' pt={1}>
+                                    <Image
+                                        height='30px'
                                         objectFit='cover'
                                         src={git}
                                         alt='GIT'
@@ -230,10 +275,13 @@ function Skills() {
                                         pr={2.5}
                                         pt={1}
                                         title='Git'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
 
                                     />
                                     <Image
-                                        height='30px'
+                                        height='25px'
                                         objectFit='cover'
                                         src={github}
                                         alt='GITHUB'
@@ -241,9 +289,12 @@ function Skills() {
                                         px={2.5}
                                         pb={1}
                                         title='GitHub'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
                                     />
                                     <Image
-                                        height='40px'
+                                        height='35px'
                                         objectFit='cover'
                                         src={slack}
                                         alt='SLACK'
@@ -251,9 +302,12 @@ function Skills() {
                                         px={2.5}
                                         pt={1}
                                         title='Slack'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
                                     />
                                     <Image
-                                        height='40px'
+                                        height='35px'
                                         objectFit='cover'
                                         src={notion}
                                         alt='NOTION'
@@ -261,16 +315,22 @@ function Skills() {
                                         px={2.5}
                                         pt={1}
                                         title='Notion'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
                                     />
                                     <Image
-                                        height='30px'
+                                        height='25px'
                                         objectFit='cover'
                                         src={npm}
                                         alt='NPM'
                                         display='inline-block'
-
+                                        px={2.5}
                                         pt={1}
                                         title='npm'
+                                        filter='grayscale(70%)'
+                                        _hover={{ filter: 'grayscale(0)' }}
+
                                     />
                                 </Box>
                             </DrawerBody >

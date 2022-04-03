@@ -29,6 +29,7 @@ function ImgGallery({ project, image }) {
             showPlayButton={false}
             showBullets={false}
             slideDuration={300}
+            useBrowserFullscreen={true}
         />)
 }
 
