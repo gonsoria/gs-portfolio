@@ -155,7 +155,7 @@ function Contact() {
                                 <DrawerBody bg='#0d0d0d' m>
                                     <Text fontSize='lg' pb={4}>Email: gonzalosoria.sg@gmail.com</Text>
                                     <Text fontSize='lg' pb={4}>Tel: +54 9 221 6240830</Text>
-                                    <Text fontSize='lg' pb={4} >Linkedin: <Link href='https://github.com/gonsoria' rel="noopener noreferrer" target='_blank' color='blue.300'> gonzalosoria-fullstack</Link>  </Text>
+                                    <Text fontSize='lg' pb={4} >Linkedin: <Link href='https://www.linkedin.com/in/gonzalosoria-fullstack/' rel="noopener noreferrer" target='_blank' color='blue.300'> gonzalosoria-fullstack</Link>  </Text>
 
                                     <Text fontSize='lg' pt={40} align='right'>La Plata, Buenos Aires.</Text>
                                     <Box align='right' alignItems='baseline'>
