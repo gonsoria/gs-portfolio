@@ -13,6 +13,10 @@ const breakpoints = createBreakpoints ( {
 })
 
 const theme = extendTheme({
+  fonts:{
+    heading: 'Oswald',
+    text: 'Oswald'
+  },
   breakpoints,
   styles: {
     global: {
@@ -23,9 +27,9 @@ const theme = extendTheme({
           background: "#0d0d0d",
           color:"#f2f2f2",
           minHeight:"100vh", 
-  
       },
     },
+    
   },
 })
 
