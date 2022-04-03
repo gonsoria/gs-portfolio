@@ -73,7 +73,7 @@ function Skills() {
                     <DrawerCloseButton py={3} outline='none' />
                     <DrawerHeader fontSize='30px' pb={0} py={1} bg='#0d0d0d'
                     >TECH SKILLS
-                        <Button h='30px' mb='7.5px' ml='15px' onClick={handleSkills}> {
+                        <Button h='30px' mb='7.5px' ml='15px' bg='#262626' onClick={handleSkills}> {
                             skillsRender === 'icon' ? 'List' : 'Icons'
                         } </Button>
                     </DrawerHeader>

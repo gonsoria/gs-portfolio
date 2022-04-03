@@ -138,7 +138,7 @@ function Contact() {
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
                             CONTACT ME
-                            <Button h='30px' mb='7.5px' ml='15px' onClick={handleContactInfo}> {
+                            <Button h='30px' mb='7.5px' ml='15px' bg='#262626' onClick={handleContactInfo}> {
                                 contactInfo === false ? 'Info' : 'Form'
                             } </Button>
                         </DrawerHeader>
@@ -167,7 +167,7 @@ function Contact() {
                                             <Box>
                                                 <FormLabel htmlFor='username'>Name</FormLabel>
                                                 <InputGroup>
-                                                    <InputLeftAddon> <FaUserAlt /> </InputLeftAddon>
+                                                    <InputLeftAddon bg='#262626'> <FaUserAlt /> </InputLeftAddon>
                                                     <Input
                                                         ref={firstField}
                                                         id='username'
@@ -182,7 +182,7 @@ function Contact() {
                                             <Box>
                                                 <FormLabel htmlFor='url'>Email</FormLabel>
                                                 <InputGroup>
-                                                    <InputLeftAddon><AtSignIcon /></InputLeftAddon>
+                                                    <InputLeftAddon bg='#262626'><AtSignIcon /></InputLeftAddon>
                                                     <Input
                                                         type='email'
                                                         id='email'
@@ -226,6 +226,7 @@ function Contact() {
                                         }
                                         <Spacer />
                                         <Button
+                                            bg='#262626'
                                             type='submit'
                                             isDisabled={buttonStatus}
                                         >Send</Button>

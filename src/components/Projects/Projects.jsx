@@ -109,13 +109,15 @@ function Projects() {
                 {
                     projects.map(
                         (project) => (
-                            <Box w='350px' mb={5} borderWidth='1px' borderRadius='lg' overflow='hidden' key={project.id} display='inline-block' height='400px' position='relative' bg='#0d0d0d'
+                            <Box w={{ base: '80vw', xs: '350px' }} mb={5} borderWidth='1px' borderRadius='lg' overflow='hidden' key={project.id} display='inline-block' height='400px' position='relative' bg='#0d0d0d' border='none'
+
                                 _hover={{
                                     cursor: 'pointer',
                                     border: '1px solid #595959'
                                 }}
                                 onClick={() => handleClick(project.id)}>
                                 <Image
+                                    roundedTop={10}
                                     src={project.imageUrl}
                                     alt={project.imageAlt}
                                     h='50%'
