@@ -19,6 +19,7 @@ import {
     Button,
     Spacer,
     Image,
+    Link,
 } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaUserAlt } from 'react-icons/fa'
@@ -146,7 +147,7 @@ function Contact() {
                                 <DrawerBody bg='#0d0d0d' m>
                                     <Text fontSize='lg' pb={4}>Email: gonzalosoria.sg@gmail.com</Text>
                                     <Text fontSize='lg' pb={4}>Tel: +54 9 221 6240830</Text>
-                                    <Text fontSize='lg' pb={4}>Linkedin: <a href='https://github.com/gonsoria' rel="noopener noreferrer" target='_blank'> gonzalosoria-fullstack</a></Text>
+                                    <Text fontSize='lg' pb={4} >Linkedin: <Link href='https://github.com/gonsoria' rel="noopener noreferrer" target='_blank' color='blue.300'> gonzalosoria-fullstack</Link>  </Text>
 
                                     <Text fontSize='lg' pt={40} align='right'>La Plata, Buenos Aires.</Text>
                                     <Box align='right' alignItems='baseline'>
@@ -154,7 +155,7 @@ function Contact() {
                                         <Image
                                             src={arg}
                                             alt='Argentina'
-                                            display='inline-block' pt={2} mx={1}
+                                            display='inline-block' pt={2} ml={1}
                                         />
                                     </Box>
 

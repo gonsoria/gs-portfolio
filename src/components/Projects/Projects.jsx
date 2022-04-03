@@ -48,7 +48,9 @@ function Projects() {
             description: 'Nøkler its an online platform dedicated to the sale of digital keys for games. ',
             myWork: 'In this project i worked in backend area designing  the ERD for the database and creating the relational models using Pisma ORM. Also worked with NodeJS and Express for the data management and the implementation of Nodemailer, Stripe and auth0 for checkouts, messages and user roles. I worked with 6 coworkers using SCRUM methodology.',
             tags: ['backend', 'prisma', 'nodejs', 'express', 'stripe', 'nodemailer', 'auth0', 'javascript', 'reactjs', 'redux', 'chakra ui'],
-            color: 'purple'
+            color: 'purple',
+            deployUrl: 'https://nokler-noklerhenry.vercel.app/',
+            repositoryUrl: 'https://github.com/gonsoria/nokler-api'
         },
         {
             id: 2,
@@ -60,7 +62,9 @@ function Projects() {
             description: 'Gamerspot is an application to find information about any games. Consumes data from an external API ',
             myWork: 'This was my first fullstack proyect, i made a single page application with Javascript. The back-end was developed in NodeJS using Express, PostgreSQL and Sequelize for database control, consuming data from an external API. The front-end was developed with React and using Redux for state management, styled using CSS without any additional framework or library. Characteristics: Searches, sorters and filters, controlled form for the creation of games.',
             tags: ['backend', 'frontend', 'javascript', 'reactjs', 'redux', 'css', 'nodejs', 'express', 'sequelize'],
-            color: 'yellow'
+            color: 'yellow',
+            deployUrl: '',
+            repositoryUrl: 'https://github.com/gonsoria/videogames-pi'
         },
         {
             id: 3,
@@ -72,10 +76,10 @@ function Projects() {
             description: 'Simple front-end application to create tasks. Developed with react',
             myWork: 'This is my first app created with React and CSS. I will be working on making this app better with more functionalities. All states are managed with react, responsive design with css, icons from fontawesome and some fonts froom google fonts.',
             tags: ['frontend', 'javascript', 'reactjs', 'css'],
-            color: 'blue'
-
+            color: 'blue',
+            deployUrl: 'https://todo-list-app-knu18tvkf-gonsoria.vercel.app/',
+            repositoryUrl: 'https://github.com/gonsoria/todo-list-app'
         },
-
     ]
 
     const [idController, setIdController] = useState(null)
@@ -96,7 +100,7 @@ function Projects() {
                 </Grid>
             </Flex >
 
-            <Box textAlign='center' height='max-content' width={{ base: 'fit-content', xs: '90vw' }} mx='auto' py='auto' >
+            <Box textAlign='center' height='max-content' width={{ base: 'fit-content', xs: '90vw' }} mx='auto' py='auto' my={5}>
                 <Heading >
                     Projects
                 </Heading>

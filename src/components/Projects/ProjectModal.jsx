@@ -6,13 +6,13 @@ import {
     ModalBody,
     ModalCloseButton,
     Button,
-    SimpleGrid,
     Box,
     Grid,
     GridItem,
     Heading,
     Badge,
-    Spacer,
+    Flex,
+    Link,
 } from '@chakra-ui/react'
 import ImgGallery from '../ImageGallery/ImgGallery'
 
@@ -22,38 +22,50 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
 
     return (
         <>
-            <Modal isOpen={isOpen} onClose={onClose} size='6xl'>
+            <Modal isOpen={isOpen} onClose={onClose} size='5xl'  >
                 <ModalOverlay />
-                <ModalContent bg='#0d0d0d' >
-                    <ModalCloseButton />
-                    <ModalBody >
-                        <SimpleGrid columns={2}>
-                            <ImgGallery project={project} image={image} />
-                            <Grid templateRows='repeat(6, 1fr)'>
-                                <GridItem rowSpan={5}>
-                                    <Heading textAlign='center'>
+                <ModalContent bg='#0d0d0d'  >
+                    <Box display='flex' justifyContent='flex-end' >
+                        <ModalCloseButton position='relative' />
+                    </Box>
+                    <ModalBody  >
+                        <Flex flexWrap={{ base: 'wrap-reverse', lg: 'nowrap' }} pb='10px'>
+                            <Box w={{ base: '90%', lg: '50%' }} mx='auto'>
+                                <ImgGallery project={project} image={image} />
+                            </Box>
+                            <Grid templateRows='repeat(6, 1fr)' w={{ lg: '50%' }}>
+                                <GridItem rowSpan={5} >
+                                    <Heading textAlign='center' pb={{ base: '10px' }}>
                                         {project[0]?.title}
                                     </Heading>
-                                    <Box p={10} align='justify'>
+                                    <Box align='justify' pl={{ lg: '24px' }}>
                                         {project[0]?.myWork}
-                                        <Spacer my={5} />
+                                    </Box>
+                                    <Box my={{ base: '5px' }} pl={{ lg: '24px' }} textAlign='justify'>
                                         {project[0]?.tags?.map((tag, i) =>
-                                            <Badge key={i} borderRadius='full' px='2' mr={2} colorScheme={project[0].color} align='justify'>
+                                            <Badge key={i} borderRadius='full' colorScheme={project[0].color} mx={{ base: '2px' }} px={{ base: '8px' }} >
                                                 {tag}
                                             </Badge>
                                         )}
                                     </Box>
                                 </GridItem>
-                                <GridItem textAlign='right' px={10}>
-                                    <Button size='sm' mx='5'>
-                                        Deploy
-                                    </Button>
-                                    <Button size='sm'>
-                                        Repository
-                                    </Button>
+                                <GridItem mt='auto' mb={{ base: '15px' }} textAlign={{ base: 'center', lg: 'end' }}>
+                                    <Link href={project[0]?.deployUrl} isExternal>
+                                        <Button size='sm' isDisabled={
+                                            project[0]?.deployUrl === '' ? true : false
+                                        }
+                                        >
+                                            Deploy
+                                        </Button>
+                                    </Link>
+                                    <Link href={project[0]?.repositoryUrl} isExternal>
+                                        <Button size='sm' ml={5}>
+                                            Repository
+                                        </Button>
+                                    </Link>
                                 </GridItem>
                             </Grid>
-                        </SimpleGrid>
+                        </Flex>
                     </ModalBody>
                 </ModalContent>
             </Modal>

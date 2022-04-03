@@ -24,7 +24,12 @@ function ImgGallery({ project, image }) {
     ].concat(imgFunction());
 
     return (
-        <ImageGallery items={img} />)
+        <ImageGallery
+            items={img}
+            showPlayButton={false}
+            showBullets={false}
+            slideDuration={300}
+        />)
 }
 
 export default ImgGallery
