@@ -88,7 +88,7 @@ function Skills() {
                         skillsRender === 'icon' ?
                             <DrawerBody bg='#0d0d0d'
                             >
-                                <Text fontSize='lg' py={1} decoration='underline'> Programming Lenguage</Text>
+                                <Text fontSize='lg' py={1} decoration='underline'> Programming Lenguages</Text>
                                 <Image
                                     height='35px'
                                     objectFit='cover'
@@ -277,7 +277,7 @@ function Skills() {
                             :
                             <DrawerBody bg='#0d0d0d' >
                                 <UnorderedList m={0}>
-                                    <Text fontSize='lg' py={1} decoration='underline'>Programming Lenguage</Text>
+                                    <Text fontSize='lg' py={1} decoration='underline'>Programming Lenguages</Text>
                                     <ListItem mx={6}>JavaScript</ListItem>
                                     <ListItem mx={6}>TypeScript</ListItem>
                                     <Text fontSize='lg' pt={4} pb={1} decoration='underline'>Back End Stack</Text>
