@@ -56,7 +56,7 @@ function LandingPage() {
                             <PopoverContent>
                                 <PopoverArrow />
                                 <PopoverBody bg='#bfbfbf' color='#0d0d0d'>
-                                    This portfolio was develope with ReactJs, using Chakra UI for styling components and transitions.
+                                    This portfolio was developed with ReactJs, using Chakra UI for styling components and transitions.
                                 </PopoverBody>
                             </PopoverContent>
                         </Popover>
