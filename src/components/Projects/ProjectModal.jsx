@@ -26,7 +26,9 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
                 <ModalOverlay />
                 <ModalContent bg='#0d0d0d'  >
                     <Box display='flex' justifyContent='flex-end' >
-                        <ModalCloseButton position='relative' />
+                        <ModalCloseButton position='relative' _hover={{
+                            bg: "#f2f2f2", color: '#0d0d0d',
+                        }} />
                     </Box>
                     <ModalBody  >
                         <Flex flexWrap={{ base: 'wrap-reverse', lg: 'nowrap' }} pb='10px'>
@@ -51,15 +53,19 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
                                 </GridItem>
                                 <GridItem mt='auto' mb={{ base: '15px' }} textAlign={{ base: 'center', lg: 'end' }}>
                                     <Link href={project[0]?.deployUrl} isExternal>
-                                        <Button size='sm' isDisabled={
+                                        <Button size='sm' _hover={{
+                                            bg: "#f2f2f2", color: '#0d0d0d',
+                                        }} isDisabled={
                                             project[0]?.deployUrl === '' ? true : false
                                         }
                                         >
                                             Deploy
                                         </Button>
                                     </Link>
-                                    <Link href={project[0]?.repositoryUrl} isExternal>
-                                        <Button size='sm' ml={5}>
+                                    <Link href={project[0]?.repositoryUrl} isExternal >
+                                        <Button size='sm' ml={5} _hover={{
+                                            bg: "#f2f2f2", color: '#0d0d0d',
+                                        }}>
                                             Repository
                                         </Button>
                                     </Link>

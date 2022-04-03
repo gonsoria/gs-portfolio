@@ -134,13 +134,17 @@ function Contact() {
                 <DrawerOverlay />
                 <form ref={refForm} onSubmit={sendEmail}>
                     <DrawerContent>
-                        <DrawerCloseButton py={3} outline='none' onClick={() => setMailStatus()} />
+                        <DrawerCloseButton py={3} outline='none' onClick={() => setMailStatus()} _hover={{
+                            bg: "#f2f2f2", color: '#0d0d0d',
+                        }} />
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
                             CONTACT ME
-                            <Button h='30px' mb='7.5px' ml='15px' bg='#262626' onClick={handleContactInfo}> {
-                                contactInfo === false ? 'Info' : 'Form'
-                            } </Button>
+                            <Button h='30px' mb='7.5px' ml='15px' _hover={{
+                                bg: "#f2f2f2", color: '#0d0d0d',
+                            }} onClick={handleContactInfo}> {
+                                    contactInfo === false ? 'Info' : 'Form'
+                                } </Button>
                         </DrawerHeader>
                         {
                             contactInfo === true ?
@@ -226,7 +230,9 @@ function Contact() {
                                         }
                                         <Spacer />
                                         <Button
-                                            bg='#262626'
+                                            _hover={{
+                                                bg: "#f2f2f2", color: '#0d0d0d',
+                                            }}
                                             type='submit'
                                             isDisabled={buttonStatus}
                                         >Send</Button>
