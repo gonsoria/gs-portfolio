@@ -18,11 +18,12 @@ import {
     DrawerFooter,
     Button,
     Spacer,
+    Image,
 } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
-
+import arg from '../../assets/argentina.png'
 
 function Contact() {
 
@@ -43,11 +44,21 @@ function Contact() {
 
     const [buttonStatus, setButtonStatus] = useState(true)
 
+    const [contactInfo, setContactInfo] = useState(false)
+
     const handleOnChange = (e) => {
         setFormValues({
             ...formValues,
             [e.target.name]: e.target.value
         })
+    }
+
+    const handleContactInfo = (e) => {
+        if (contactInfo === false) {
+            setContactInfo(true)
+        } else if (contactInfo === true) {
+            setContactInfo(false)
+        }
     }
 
     const handleButtonStatus = () => {
@@ -125,77 +136,101 @@ function Contact() {
                         <DrawerCloseButton py={3} outline='none' onClick={() => setMailStatus()} />
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
-                            CONTACT ME:
+                            CONTACT ME
+                            <Button h='30px' mb='7.5px' ml='15px' onClick={handleContactInfo}> {
+                                contactInfo === false ? 'Info' : 'Form'
+                            } </Button>
                         </DrawerHeader>
+                        {
+                            contactInfo === true ?
+                                <DrawerBody bg='#0d0d0d' m>
+                                    <Text fontSize='lg' pb={4}>Email: gonzalosoria.sg@gmail.com</Text>
+                                    <Text fontSize='lg' pb={4}>Tel: +54 9 221 6240830</Text>
+                                    <Text fontSize='lg' pb={4}>Linkedin: <a href='https://github.com/gonsoria' rel="noopener noreferrer" target='_blank'> gonzalosoria-fullstack</a></Text>
 
-                        <DrawerBody bg='#0d0d0d'>
-                            <Stack spacing='24px'>
-                                <Box>
-                                    <FormLabel htmlFor='username'>Name</FormLabel>
-                                    <InputGroup>
-                                        <InputLeftAddon> <FaUserAlt /> </InputLeftAddon>
-                                        <Input
-                                            ref={firstField}
-                                            id='username'
-                                            placeholder='Please enter your name'
-                                            name='from_name'
-                                            value={formValues.from_name}
-                                            onChange={handleOnChange}
+                                    <Text fontSize='lg' pt={40} align='right'>La Plata, Buenos Aires.</Text>
+                                    <Box align='right' alignItems='baseline'>
+                                        <Text fontSize='lg' py={1} display='inline-block'>Argentina</Text>
+                                        <Image
+                                            src={arg}
+                                            alt='Argentina'
+                                            display='inline-block' pt={2} mx={1}
                                         />
-                                    </InputGroup>
-                                </Box>
+                                    </Box>
 
-                                <Box>
-                                    <FormLabel htmlFor='url'>Email</FormLabel>
-                                    <InputGroup>
-                                        <InputLeftAddon><AtSignIcon /></InputLeftAddon>
-                                        <Input
-                                            type='email'
-                                            id='email'
-                                            placeholder='Please enter your email'
-                                            name='from_email'
-                                            value={formValues.from_email}
-                                            onChange={handleOnChange}
-                                        />
-                                    </InputGroup>
-                                </Box>
+                                </DrawerBody>
+                                :
+                                <>
+                                    <DrawerBody bg='#0d0d0d'>
+                                        <Stack spacing='24px'>
+                                            <Box>
+                                                <FormLabel htmlFor='username'>Name</FormLabel>
+                                                <InputGroup>
+                                                    <InputLeftAddon> <FaUserAlt /> </InputLeftAddon>
+                                                    <Input
+                                                        ref={firstField}
+                                                        id='username'
+                                                        placeholder='Please enter your name'
+                                                        name='from_name'
+                                                        value={formValues.from_name}
+                                                        onChange={handleOnChange}
+                                                    />
+                                                </InputGroup>
+                                            </Box>
 
-                                <Box>
-                                    <FormLabel >Subject</FormLabel>
-                                    <InputGroup>
-                                        <Input
-                                            id='url'
-                                            placeholder='Subject'
-                                            name='subject'
-                                            value={formValues.subject}
-                                            onChange={handleOnChange}
-                                        />
-                                    </InputGroup>
-                                </Box>
+                                            <Box>
+                                                <FormLabel htmlFor='url'>Email</FormLabel>
+                                                <InputGroup>
+                                                    <InputLeftAddon><AtSignIcon /></InputLeftAddon>
+                                                    <Input
+                                                        type='email'
+                                                        id='email'
+                                                        placeholder='Please enter your email'
+                                                        name='from_email'
+                                                        value={formValues.from_email}
+                                                        onChange={handleOnChange}
+                                                    />
+                                                </InputGroup>
+                                            </Box>
 
-                                <Box>
-                                    <FormLabel htmlFor='desc'>Message</FormLabel>
-                                    <Textarea
-                                        id='desc'
-                                        placeholder='Type your message here...'
-                                        minH='130px'
-                                        name='message'
-                                        value={formValues.message}
-                                        onChange={handleOnChange}
-                                    />
-                                </Box>
-                            </Stack>
-                        </DrawerBody>
-                        <DrawerFooter bg='#0d0d0d'>
-                            {
-                                mailStatus === 'sent' ? <Text fontSize='md' as='i' > <InfoIcon color='green' mr={2} />Message succesfully sent! Thank you.</Text> : mailStatus === 'failed' ? <Text fontSize='md' as='i' w='80%' > <InfoIcon color='red' mr={2} />Failed to send the message, please try again</Text> : null
-                            }
-                            <Spacer />
-                            <Button
-                                type='submit'
-                                isDisabled={buttonStatus}
-                            >Send</Button>
-                        </DrawerFooter>
+                                            <Box>
+                                                <FormLabel >Subject</FormLabel>
+                                                <InputGroup>
+                                                    <Input
+                                                        id='url'
+                                                        placeholder='Subject'
+                                                        name='subject'
+                                                        value={formValues.subject}
+                                                        onChange={handleOnChange}
+                                                    />
+                                                </InputGroup>
+                                            </Box>
+
+                                            <Box>
+                                                <FormLabel htmlFor='desc'>Message</FormLabel>
+                                                <Textarea
+                                                    id='desc'
+                                                    placeholder='Type your message here...'
+                                                    minH='130px'
+                                                    name='message'
+                                                    value={formValues.message}
+                                                    onChange={handleOnChange}
+                                                />
+                                            </Box>
+                                        </Stack>
+                                    </DrawerBody>
+                                    <DrawerFooter bg='#0d0d0d'>
+                                        {
+                                            mailStatus === 'sent' ? <Text fontSize='md' as='i' > <InfoIcon color='green' mr={2} />Message succesfully sent! Thank you.</Text> : mailStatus === 'failed' ? <Text fontSize='md' as='i' w='80%' > <InfoIcon color='red' mr={2} />Failed to send the message, please try again</Text> : null
+                                        }
+                                        <Spacer />
+                                        <Button
+                                            type='submit'
+                                            isDisabled={buttonStatus}
+                                        >Send</Button>
+                                    </DrawerFooter>
+                                </>
+                        }
                     </DrawerContent>
                 </form>
             </Drawer>

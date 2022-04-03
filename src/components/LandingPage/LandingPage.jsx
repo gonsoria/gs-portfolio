@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsLinkedin, BsGithub, } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import {
     Box,
     Button,
     Flex,
     Spacer,
+    Tooltip,
 } from '@chakra-ui/react'
 import AnimatedComponents from './AnimatedComponents'
+import { InfoIcon } from '@chakra-ui/icons'
 
 function LandingPage() {
     return (
@@ -24,6 +26,11 @@ function LandingPage() {
                     </Link>
                 </Box>
                 <Spacer display={{ base: 'none', xxs: 'inline-block' }} />
+                <Box px={5} display={{ base: 'none', xxs: 'inline-block' }}>
+                    <Tooltip label='This portfolio was develope with ReactJs, using Chakra UI for styling components and transitions.' hasArrow arrowSize={15} placement='left-start'>
+                        <InfoIcon fontSize={30} color='#a6a6a6' _hover={{ cursor: 'pointer' }} />
+                    </Tooltip>
+                </Box>
                 <Box px={1} display={{ base: 'none', xxs: 'inline-block' }}>
                     <a href='https://www.linkedin.com/in/gonzalosoria-fullstack/' rel="noopener noreferrer" target='_blank'  >
                         <BsLinkedin fontSize={30} color='#a6a6a6' />
