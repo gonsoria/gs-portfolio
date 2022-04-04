@@ -38,7 +38,7 @@ function AnimatedComponents() {
                 </Box>
             </Box>
 
-            <Box width={['271px', '339px', '339px', '407px', '542px', '610.84px']} align='justify' paddingTop={{ base: '20px', md: '0' }} display='inline-block' >
+            <Box width={['271px', '339px', '339px', '407px', '542px', '610.84px']} align='justify' paddingTop={{ base: '20px', md: '0' }} display='inline-block' position='relative' bg='#0d0d0d'>
                 <Text fontSize='md' >
                     {t("animatedComponent.description")}
                 </Text>
