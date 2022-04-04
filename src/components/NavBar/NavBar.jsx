@@ -50,7 +50,10 @@ function NavBar() {
                         onChange={handleSelect}
                         variant='unstyled'
                         defaultValue='def'
-                        bg='none'
+                        bg='#0d0d0d'
+                        color='#f2f2f2'
+                        boxShadow='#0d0d0d'
+                        outline='none'
                         display='inline-block'
                         fontSize='lg'
                         py={1}
@@ -61,6 +64,7 @@ function NavBar() {
                         _focus={{ outline: 'none' }}
                     >
                         <option
+                            color=''
                             value='def'
                             hidden
                         > {t('navBar.select')}
