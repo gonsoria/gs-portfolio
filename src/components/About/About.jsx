@@ -22,11 +22,20 @@ import bootstrap from '../../assets/svg/bootstrap.svg'
 
 
 function About() {
-    const { t } = useTranslation()
-    const svgs = [js, react, node, express, postgres, html, css, bootstrap, vscode, git, github, npm]
-    const softSkills = ['pensamiento analitico', 'scrum', 'adaptabilidad', 'autodidacta', 'aprendizaje rapido', 'Resolucion de problemas', 'pensamiento critico']
-    const interests = ['programacion', 'electronica', 'leer', 'musica', 'futbol', 'perros', 'café', 'ciencia ficcion', 'cine de terror']
+    const { t, i18n } = useTranslation()
 
+    const svgs = [js, react, node, express, postgres, html, css, bootstrap, vscode, git, github, npm]
+
+    const esSoftSkills = ['pensamiento analitico', 'scrum', 'adaptabilidad', 'autodidacta', 'aprendizaje rapido', 'Resolucion de problemas', 'pensamiento critico']
+
+    const enSoftSkills = ['analytical', 'scrum', 'adaptability', 'autodidact', 'agile learning', 'problem solving', 'critical thinking']
+
+    const esInterests = ['programacion', 'electronica', 'leer', 'musica', 'futbol', 'perros', 'café', 'ciencia ficcion', 'cine de terror']
+
+    const enInterests = ['programming', 'electronic', 'books', 'music', 'football', 'dogs', 'coffee', 'science fiction ', 'horror movies']
+
+    const softSkills = i18n.languages[0] === 'es' ? esSoftSkills : enSoftSkills
+    const interests = i18n.languages[0] === 'es' ? esInterests : enInterests
 
     return (
         <>
@@ -43,7 +52,7 @@ function About() {
                 <VStack textAlign='justify' px='2.5vw' my={2} display={{ base: 'flex', md: 'none' }}>
                     <Box>
                         <Heading size='2xl' >
-                            Sobre mi
+                            {t('about.title')}
                         </Heading>
                     </Box>
 
@@ -90,7 +99,7 @@ function About() {
                     <Divider />
                     <Box >
                         <Heading fontSize='2xl'>
-                            Nivel de ingles
+                            {t('about.english-level')}
                         </Heading>
                     </Box>
 
@@ -107,7 +116,7 @@ function About() {
                                     _hover={{
                                         bg: '#f2f2f2', color: '#0d0d0d',
                                     }}>
-                                    Ver certificado EF-SET
+                                    {t('about.certificate')}
                                 </Button>
                             </a>
                         </GridItem>
@@ -115,7 +124,7 @@ function About() {
                     <Divider />
                     <Box >
                         <Heading fontSize='2xl'>
-                            Habilidades blandas
+                            {t('about.sofSkills')}
                         </Heading>
                     </Box>
                     <Box align='center'>
@@ -128,7 +137,7 @@ function About() {
                     <Divider />
                     <Box>
                         <Heading fontSize='2xl'>
-                            Intereses
+                            {t('about.interests')}
                         </Heading>
                     </Box>
                     <Box align='center'>
@@ -140,12 +149,12 @@ function About() {
                     </Box>
                     <Divider />
                     <Box >
-                        <a href='https://www.efset.org/cert/LBFPxS' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://drive.google.com/file/d/1qtxulHEtEe-ic0__x-TIw8laP-drzGqB/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
                             <Button mt={3} mb={10} size='sm' bg='#262626'
                                 _hover={{
                                     bg: '#f2f2f2', color: '#0d0d0d',
                                 }}>
-                                Ver CV
+                                {t('about.viewCv')}
                             </Button>
                         </a>
                     </Box>
@@ -158,7 +167,7 @@ function About() {
 
                 <GridItem colSpan={12} rowSpan={1} align='center' pt={5} pb={10}>
                     <Heading size='2xl' >
-                        Sobre mi
+                        {t('about.title')}
                     </Heading>
                 </GridItem>
 
@@ -228,19 +237,19 @@ function About() {
 
                 <GridItem colSpan={4} rowSpan={1} align='center' p={5}>
                     <Heading fontSize='2xl'>
-                        Nivel de ingles
+                        {t('about.english-level')}
                     </Heading>
                 </GridItem>
 
                 <GridItem colSpan={4} rowSpan={1} align='center' p={5}>
                     <Heading fontSize='2xl'>
-                        Habilidades blandas
+                        {t('about.sofSkills')}
                     </Heading>
                 </GridItem>
 
                 <GridItem colSpan={4} rowSpan={1} align='center' p={5}>
                     <Heading fontSize='2xl'>
-                        Intereses
+                        {t('about.interests')}
                     </Heading>
                 </GridItem>
 
@@ -258,7 +267,7 @@ function About() {
                                     _hover={{
                                         bg: '#f2f2f2', color: '#0d0d0d',
                                     }}>
-                                    Ver certificado EF-SET
+                                    {t('about.certificate')}
                                 </Button>
                             </a>
                         </GridItem>
@@ -287,18 +296,18 @@ function About() {
                         </Badge>
                     )}
                 </GridItem>
-                <GridItem colSpan={11} align='right' my={10}>
+                <GridItem colSpan={11} align='right' my={10} mr={5}>
                     <Text fontSize='xl'>
-                        Curriculum vitae
+                        {t('about.cv')}
                     </Text>
                 </GridItem>
                 <GridItem colSpan={1} align='center' my={10}>
-                    <a href='#' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://drive.google.com/file/d/1qtxulHEtEe-ic0__x-TIw8laP-drzGqB/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
                         <Button size='sm' bg='#262626'
                             _hover={{
                                 bg: '#f2f2f2', color: '#0d0d0d',
                             }}>
-                            Ver CV
+                            {t('about.viewCv')}
                         </Button>
                     </a>
                 </GridItem>

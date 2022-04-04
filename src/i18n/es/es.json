@@ -53,6 +53,13 @@
         "btn-repository": "Repositorio"
     },
     "about": {
+        "title": "Sobre mi",
+        "english-level": "Nivel de ingles",
+        "certificate": "Ver certificado EF-SET",
+        "sofSkills": "Habilidades blandas",
+        "interests": "Intereses",
+        "cv": "Curriculum vitae",
+        "viewCv": "Ver CV",
         "ph-1": "Soy un apasionado de la informática y la electrónica, disfruto mucho aprender nuevas tecnologías relacionadas a la programación, la resolución de problemas, la innovación y la creación de aplicaciones útiles. Tengo experiencia en el desarrollo web FullStack con JavaScript tanto en proyectos grupales como individuales.",
         "ph-2": "Me considero una persona analítica, comprometida, responsable y con muchas ideas. Mi objetivo es poder insertarme en un ambiente laboral con un grupo de desarrollo del cual pueda aprender y donde pueda aportar mis habilidades adquiridas estos últimos años.",
         "ph-3": "Actualmente me encuentro estudiando Ingeniería Electrónica en la universidad nacional de La Plata, área en la que trabaje estos últimos años y donde participé en tareas relacionadas al ioT usando lenguaje C, principalmente con microcontroladores Arduino o Espressif (ESP32). Estudié diseño de circuitos impresos (PCBs) en la Universidad Tecnológica Nacional (UTN FRRe) utilizando el software Altium Designer.",
