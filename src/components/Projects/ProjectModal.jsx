@@ -15,8 +15,12 @@ import {
     Link,
 } from '@chakra-ui/react'
 import ImgGallery from '../ImageGallery/ImgGallery'
+import { useTranslation } from 'react-i18next';
+
+
 
 function ProjectModal({ isOpen, onClose, projects, idController, image }) {
+    const { t } = useTranslation()
 
     const project = projects.filter(project => project.id === idController)
 
@@ -60,7 +64,7 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
                                                 project[0]?.deployUrl === '' ? true : false
                                             }
                                         >
-                                            Deploy
+                                            {t('projects.btn-deploy')}
                                         </Button>
                                     </Link>
                                     <Link href={project[0]?.repositoryUrl} isExternal >
@@ -68,7 +72,8 @@ function ProjectModal({ isOpen, onClose, projects, idController, image }) {
                                             _hover={{
                                                 bg: "#f2f2f2", color: '#0d0d0d',
                                             }}>
-                                            Repository
+                                            {t('projects.btn-repository')}
+
                                         </Button>
                                     </Link>
                                 </GridItem>

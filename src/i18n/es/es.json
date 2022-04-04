@@ -1,0 +1,55 @@
+{
+    "animatedComponent": {
+        "title": "Hola, mi nombre es",
+        "name": "Gonzalo Soria",
+        "description": "Soy un desarrollador web Fullstack de La Plata, Buenos Aires Argentina. Tengo experiencia en la programacion de aplicaciones utilizando JavaScript / ReacJs / NodeJs y muchas otras librerias de trabajo. Busco un lugar donde pueda aportar mi experiencia y crecer profesionalmente."
+    },
+    "landingPage": {
+        "about-me": "Mas sobre mí",
+        "tooltip": "Esta pagina fue desarrollada con ReacJs. Usando Chakra UI para los estilos"
+    },
+    "navBar": {
+        "projects": "Proyectos",
+        "select": "Idioma",
+        "select-es": "Español",
+        "select-en": "Ingles"
+    },
+    "responsiveMenu": {
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Proyectos"
+    },
+    "skills": {
+        "navTitle": "Habilidades",
+        "title": "Habilidades Tecnicas",
+        "btn-list": "Lista",
+        "btn-icons": "Iconos",
+        "programmingLanguages": "Lenguajes de programacion",
+        "backend": "Tecnologias BackEnd",
+        "dataBase": "Base de datos | ORM",
+        "frontend": "Tecnologias FronEnd",
+        "tools": "Herramientas"
+    },
+    "contact": {
+        "navTitle": "Contacto",
+        "title": "Contacto",
+        "btn-info": "Info",
+        "btn-form": "Formulario",
+        "name-label": "Nombre",
+        "name-placeholder": "Por favor ingrese su nombre",
+        "email-label": "Email",
+        "email-placeholder": "Por favor ingrese su email",
+        "subject-label": "Asunto",
+        "subject-placeholder": "Asunto",
+        "message-label": "Mensaje",
+        "message-placeholder": "Escriba aquí su mensaje",
+        "btn-send": "Enviar",
+        "succes": "Gracias! el mensaje fue enviado con exito.",
+        "fail": "No se pudo enviar el mensaje, por favor pruebe otra vez"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "btn-deploy": "Visitar",
+        "btn-repository": "Repositorio"
+    }
+}

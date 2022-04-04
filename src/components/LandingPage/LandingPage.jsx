@@ -13,8 +13,13 @@ import {
     Tooltip,
 } from '@chakra-ui/react'
 import AnimatedComponents from './AnimatedComponents'
+import { useTranslation } from 'react-i18next';
+
 
 function LandingPage() {
+    const { t } = useTranslation()
+
+
     return (
         <>
             <Flex direction='column' textAlign={{ base: 'center', md: 'left' }} height='fit-content' width={{ base: '76vw', xxs: '90vw' }} mx='auto' py={{ xxs: 'calc(50vh - 213px)', xs: 'calc(50vh - 209px)', sm: 'calc(50vh - 202px)', md: 'calc(50vh - 202px)', lg: 'calc(50vh - 202px)' }} paddingTop={{ base: '15px' }} paddingBottom={{ base: '20px' }} >
@@ -24,14 +29,14 @@ function LandingPage() {
                 <Box textAlign={{ base: 'center' }}>
                     <Link to='/about'>
                         <Button size='sm' color="black" bg='#a6a6a6' _hover={{ bg: '#d9d9d9' }}  >
-                            More about me.
+                            {t('landingPage.about-me')}
                         </Button>
                     </Link>
                 </Box>
                 <Box alignContent='center' mt={{ base: '30px', xxs: '0' }}>
 
                     <Box px={5} display={{ base: 'none', xxs: 'inline-block' }} >
-                        <Tooltip label='This portfolio was developed with ReactJs, using Chakra UI for styling components and transitions.' hasArrow arrowSize={15} placement='left-start' bg='#bfbfbf' color='#0d0d0d'>
+                        <Tooltip label={t('landingPage.tooltip')} hasArrow arrowSize={15} placement='left-start' bg='#bfbfbf' color='#0d0d0d'>
                             <Box >
                                 <BsInfoCircleFill
                                     fontSize={30}
@@ -56,7 +61,7 @@ function LandingPage() {
                             <PopoverContent>
                                 <PopoverArrow />
                                 <PopoverBody bg='#bfbfbf' color='#0d0d0d'>
-                                    This portfolio was developed with ReactJs, using Chakra UI for styling components and transitions.
+                                    {t('landingPage.tooltip')}
                                 </PopoverBody>
                             </PopoverContent>
                         </Popover>

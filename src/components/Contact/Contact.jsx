@@ -25,8 +25,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 import arg from '../../assets/argentina.png'
+import { useTranslation } from 'react-i18next';
+
+
+
 
 function Contact() {
+    const { t } = useTranslation()
 
     const initialFormValues = {
         from_name: '',
@@ -119,7 +124,7 @@ function Contact() {
                 py={1} _hover={{
                     color: '#a6a6a6',
                     cursor: 'pointer'
-                }}>Contact
+                }}>{t('contact.navTitle')}
             </Text>
 
             <Drawer
@@ -142,12 +147,12 @@ function Contact() {
                             }} />
                         <DrawerHeader
                             fontSize='30px' pb={3} py={1} bg='#0d0d0d'>
-                            CONTACT ME
+                            {t('contact.title')}
                             <Button h='30px' mb='7.5px' ml='15px' bg='#262626'
                                 _hover={{
                                     bg: "#f2f2f2", color: '#0d0d0d',
                                 }} onClick={handleContactInfo}> {
-                                    contactInfo === false ? 'Info' : 'Form'
+                                    contactInfo === false ? `${t('contact.btn-info')}` : `${t('contact.btn-form')}`
                                 } </Button>
                         </DrawerHeader>
                         {
@@ -173,7 +178,7 @@ function Contact() {
                                     <DrawerBody bg='#0d0d0d'>
                                         <Stack spacing='24px'>
                                             <Box>
-                                                <FormLabel htmlFor='username'>Name</FormLabel>
+                                                <FormLabel htmlFor='username'>{t('contact.name-label')}</FormLabel>
                                                 <InputGroup>
                                                     <InputLeftAddon bg='#262626' border='none'
                                                     > <FaUserAlt /> </InputLeftAddon>
@@ -182,7 +187,7 @@ function Contact() {
                                                         bg='#262626'
                                                         ref={firstField}
                                                         id='username'
-                                                        placeholder='Please enter your name'
+                                                        placeholder={t('contact.name-placeholder')}
                                                         name='from_name'
                                                         value={formValues.from_name}
                                                         onChange={handleOnChange}
@@ -191,7 +196,7 @@ function Contact() {
                                             </Box>
 
                                             <Box>
-                                                <FormLabel htmlFor='url'>Email</FormLabel>
+                                                <FormLabel htmlFor='url'>{t('contact.email-label')}</FormLabel>
                                                 <InputGroup>
                                                     <InputLeftAddon bg='#262626' border='none'
                                                     ><AtSignIcon /></InputLeftAddon>
@@ -200,7 +205,7 @@ function Contact() {
                                                         bg='#262626'
                                                         type='email'
                                                         id='email'
-                                                        placeholder='Please enter your email'
+                                                        placeholder={t('contact.email-placeholder')}
                                                         name='from_email'
                                                         value={formValues.from_email}
                                                         onChange={handleOnChange}
@@ -209,13 +214,13 @@ function Contact() {
                                             </Box>
 
                                             <Box>
-                                                <FormLabel >Subject</FormLabel>
+                                                <FormLabel >{t('contact.subject-label')}</FormLabel>
                                                 <InputGroup>
                                                     <Input
                                                         border='none'
                                                         bg='#262626'
                                                         id='url'
-                                                        placeholder='Subject'
+                                                        placeholder={t('contact.subject-placeholder')}
                                                         name='subject'
                                                         value={formValues.subject}
                                                         onChange={handleOnChange}
@@ -224,12 +229,12 @@ function Contact() {
                                             </Box>
 
                                             <Box>
-                                                <FormLabel htmlFor='desc'>Message</FormLabel>
+                                                <FormLabel htmlFor='desc'>{t('contact.message-label')}</FormLabel>
                                                 <Textarea
                                                     border='none'
                                                     bg='#262626'
                                                     id='desc'
-                                                    placeholder='Type your message here...'
+                                                    placeholder={t('contact.message-placeholder')}
                                                     minH='130px'
                                                     name='message'
                                                     value={formValues.message}
@@ -240,7 +245,7 @@ function Contact() {
                                     </DrawerBody>
                                     <DrawerFooter bg='#0d0d0d'>
                                         {
-                                            mailStatus === 'sent' ? <Text fontSize='md' as='i' > <InfoIcon color='green' mr={2} />Message succesfully sent! Thank you.</Text> : mailStatus === 'failed' ? <Text fontSize='md' as='i' w='80%' > <InfoIcon color='red' mr={2} />Failed to send the message, please try again</Text> : null
+                                            mailStatus === 'sent' ? <Text fontSize='md' as='i' > <InfoIcon color='green' mr={2} />{t('contact.succes')}</Text> : mailStatus === 'failed' ? <Text fontSize='md' as='i' w='80%' > <InfoIcon color='red' mr={2} />{t('contact.fail')}</Text> : null
                                         }
                                         <Spacer />
                                         <Button
@@ -250,7 +255,7 @@ function Contact() {
                                             }}
                                             type='submit'
                                             isDisabled={buttonStatus}
-                                        >Send</Button>
+                                        >{t('contact.btn-send')}</Button>
                                     </DrawerFooter>
                                 </>
                         }

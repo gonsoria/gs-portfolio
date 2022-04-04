@@ -1,0 +1,55 @@
+{
+    "animatedComponent": {
+        "title": "Hello there, my name is",
+        "name": "Gonzalo Soria",
+        "description": "I'm a Full Stack Web Developer based in La Plata, Bs As. Argentina. I have experience building web applications with Javascript / Reactjs / Nodejs and some others cool frameworks and libraries. I'm always learning about new things and looking forward to collaborate on development projects."
+    },
+    "landingPage": {
+        "about-me": "More about me",
+        "tooltip": "This portfolio was developed with ReactJs, using Chakra UI for styling components and transitions."
+    },
+    "navBar": {
+        "projects": "Projects",
+        "select": "Language",
+        "select-es": "Spanish",
+        "select-en": "English"
+    },
+    "responsiveMenu": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
+    },
+    "skills": {
+        "navTitle": "Skills",
+        "title": "Tech Skills",
+        "btn-list": "List",
+        "btn-icons": "Icons",
+        "programmingLanguages": "Programming languages",
+        "backend": "BackEnd Stack",
+        "dataBase": "Data Base | ORM",
+        "frontend": "FronEnd Stack",
+        "tools": "Revision control | Management | Tools"
+    },
+    "contact": {
+        "navTitle": "Contact",
+        "title": "Contact me",
+        "btn-info": "Info",
+        "btn-form": "Form",
+        "name-label": "Name",
+        "name-placeholder": "Please enter your name",
+        "email-label": "Email",
+        "email-placeholder": "Please enter your email",
+        "subject-label": "Subject",
+        "subject-placeholder": "Subject",
+        "message-label": "Message",
+        "message-placeholder": "Type your message here...",
+        "btn-send": "Send",
+        "succes": "Thank you! Message succesfully sent!",
+        "fail": "Message send failed. Please try again."
+    },
+    "projects": {
+        "title": "Projects",
+        "btn-deploy": "Deploy",
+        "btn-repository": "Repository"
+    }
+}

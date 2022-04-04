@@ -33,8 +33,11 @@ import github from '../../assets/tools/github.png'
 import chakra from '../../assets/frontend/chakra.png'
 import botstrap from '../../assets/frontend/bootstrap.png'
 import npm from '../../assets/tools/npm.png'
+import { useTranslation } from 'react-i18next';
+
 
 function Skills() {
+    const { t } = useTranslation()
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
 
@@ -56,7 +59,7 @@ function Skills() {
                 py={1} _hover={{
                     color: '#a6a6a6',
                     cursor: 'pointer'
-                }}>Skills
+                }}>{t('skills.navTitle')}
             </Text>
             <Drawer
                 isOpen={isOpen}
@@ -76,18 +79,18 @@ function Skills() {
                             bg: "#f2f2f2", color: '#0d0d0d',
                         }} />
                     <DrawerHeader fontSize='30px' pb={0} py={1} bg='#0d0d0d'
-                    >TECH SKILLS
+                    >{t('skills.title')}
                         <Button h='30px' mb='7.5px' ml='15px' bg='#262626'
                             _hover={{
                                 bg: "#f2f2f2", color: '#0d0d0d',
                             }} onClick={handleSkills}> {
-                                skillsRender === 'icon' ? 'List' : 'Icons'
+                                skillsRender === 'icon' ? `${t('skills.btn-list')}` : `${t('skills.btn-icons')}`
                             } </Button>
                     </DrawerHeader>
                     {
                         skillsRender === 'icon' ?
                             <DrawerBody bg='#0d0d0d' >
-                                <Text fontSize='lg' decoration='underline'> Programming Lenguages</Text>
+                                <Text fontSize='lg' decoration='underline'> {t('skills.programmingLanguages')}</Text>
                                 <Box pb={10} pt={2}>
                                     <Image
                                         height='30px'
@@ -114,7 +117,7 @@ function Skills() {
                                     />
                                 </Box>
 
-                                <Text fontSize='lg' decoration='underline'> Back End Stack</Text>
+                                <Text fontSize='lg' decoration='underline'>{t('skills.backend')}</Text>
                                 <Box pb={10} pt={1}>
                                     <Image
                                         height='30px'
@@ -143,7 +146,7 @@ function Skills() {
                                     />
                                 </Box>
 
-                                <Text fontSize='lg' decoration='underline'> Data Base | ORM</Text>
+                                <Text fontSize='lg' decoration='underline'>{t('skills.dataBase')}</Text>
                                 <Box pb={10} pt={1}>
                                     <Image
                                         height='35px'
@@ -184,7 +187,7 @@ function Skills() {
                                     />
                                 </Box>
 
-                                <Text fontSize='lg' decoration='underline'> Front End Stack</Text>
+                                <Text fontSize='lg' decoration='underline'> {t('skills.frontend')}</Text>
                                 <Box pb={10} pt={1}>
                                     <Image
                                         height='40px'
@@ -264,7 +267,7 @@ function Skills() {
                                     />
                                 </Box>
 
-                                <Text fontSize='lg' decoration='underline'>Revision Control | Management | Tools</Text>
+                                <Text fontSize='lg' decoration='underline'>{t('skills.tools')}</Text>
                                 <Box alignItems='center' pt={1}>
                                     <Image
                                         height='30px'
@@ -337,25 +340,23 @@ function Skills() {
                             :
                             <DrawerBody bg='#0d0d0d' >
                                 <UnorderedList m={0}>
-                                    <Text fontSize='lg' py={1} decoration='underline'>Programming Lenguages</Text>
+                                    <Text fontSize='lg' py={1} decoration='underline'>{t('skills.programmingLanguages')}</Text>
                                     <Box pb={10} pt={1}>
                                         <ListItem mx={6}>JavaScript</ListItem>
                                         <ListItem mx={6}>TypeScript</ListItem>
                                     </Box>
-                                    <SimpleGrid columns={2}>
-                                        <Text fontSize='lg' decoration='underline'>Back End Stack</Text>
-                                        <Text fontSize='lg' decoration='underline'>Data Base | ORM</Text>
-                                        <Box pb={10} pt={1}>
-                                            <ListItem mx={6}>Node.js</ListItem>
-                                            <ListItem mx={6}>Express</ListItem>
-                                        </Box>
-                                        <Box pb={10} pt={1}>
-                                            <ListItem mx={6}>PostgreSQL</ListItem>
-                                            <ListItem mx={6}>Sequelize</ListItem>
-                                            <ListItem mx={6}>Prisma</ListItem>
-                                        </Box>
-                                    </SimpleGrid>
-                                    <Text fontSize='lg' decoration='underline' >Front End Stack</Text>
+                                    <Text fontSize='lg' decoration='underline'>{t('skills.backend')}</Text>
+                                    <Box pb={10} pt={1}>
+                                        <ListItem mx={6}>Node.js</ListItem>
+                                        <ListItem mx={6}>Express</ListItem>
+                                    </Box>
+                                    <Text fontSize='lg' decoration='underline'>{t('skills.dataBase')}</Text>
+                                    <Box pb={10} pt={1}>
+                                        <ListItem mx={6}>PostgreSQL</ListItem>
+                                        <ListItem mx={6}>Sequelize</ListItem>
+                                        <ListItem mx={6}>Prisma</ListItem>
+                                    </Box>
+                                    <Text fontSize='lg' decoration='underline' >{t('skills.frontend')}</Text>
                                     <Box pb={10} pt={1}>
                                         <SimpleGrid columns={{ base: 2, xxs: 3 }}>
                                             <ListItem mx={6}>HTML5</ListItem>
@@ -366,7 +367,7 @@ function Skills() {
                                             <ListItem mx={6}>Bootstrap</ListItem>
                                         </SimpleGrid>
                                     </Box>
-                                    <Text fontSize='lg' decoration='underline'>Revision Control | Management | Tools</Text>
+                                    <Text fontSize='lg' decoration='underline'>{t('skills.tools')}</Text>
                                     <Box pb={10} pt={1}>
                                         <SimpleGrid columns={{ base: 2, xxs: 3 }} spacing={1}>
                                             <ListItem mx={6}>Git</ListItem>
