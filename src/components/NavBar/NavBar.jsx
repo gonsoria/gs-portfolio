@@ -48,7 +48,6 @@ function NavBar() {
                     <Select
                         pl={4}
                         onChange={handleSelect}
-                        variant='unstyled'
                         defaultValue='def'
                         bg='#0d0d0d'
                         color='#f2f2f2'
