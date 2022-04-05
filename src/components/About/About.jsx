@@ -30,9 +30,9 @@ function About() {
 
     const enSoftSkills = ['analytical', 'scrum', 'adaptability', 'autodidact', 'agile learning', 'problem solving', 'critical thinking']
 
-    const esInterests = ['programacion', 'electronica', 'leer', 'musica', 'futbol', 'perros', 'café', 'ciencia ficcion', 'cine de terror']
+    const esInterests = ['javascript', 'typescript', 'mongodb', 'backend', 'java', 'python', 'arduino', 'internet of things']
 
-    const enInterests = ['programming', 'electronic', 'books', 'music', 'football', 'dogs', 'coffee', 'science fiction ', 'horror movies']
+    const enInterests = ['javascript', 'typescript', 'mongodb', 'backend', 'java', 'python', 'arduino', 'internet of things']
 
     const softSkills = i18n.languages[0] === 'es' ? esSoftSkills : enSoftSkills
     const interests = i18n.languages[0] === 'es' ? esInterests : enInterests
