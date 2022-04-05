@@ -53,7 +53,7 @@ function NavBar() {
                         bg='#0d0d0d'
                         color='#f2f2f2'
                         boxShadow='#0d0d0d'
-                        outline='none'
+                        outline='#0d0d0d'
                         display='inline-block'
                         fontSize='lg'
                         py={1}
@@ -64,17 +64,19 @@ function NavBar() {
                         _focus={{ outline: 'none' }}
                     >
                         <option
-                            color=''
+                            color='#0d0d0d'
                             value='def'
                             hidden
                         > {t('navBar.select')}
                         </option>
                         <option
+                            bg='#0d0d0d'
                             value='en'
                         > {t('navBar.select-en')}
                         </option>
 
                         <option
+                            bg='#0d0d0d'
                             value='es'
                         > {t('navBar.select-es')}
                         </option>
