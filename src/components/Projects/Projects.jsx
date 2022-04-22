@@ -38,6 +38,13 @@ import { ArrowLeftIcon } from '@chakra-ui/icons'
 import portfolio from '../../assets/img/portfolio/home.JPG'
 import { useTranslation } from 'react-i18next'
 
+//TASK-MANAGER
+import folders from '../../assets/img/task-manager/folders.JPG'
+import hometask from '../../assets/img/task-manager/home.JPG'
+import register from '../../assets/img/task-manager/register.JPG'
+import todolist2 from '../../assets/img/task-manager/todolist.JPG'
+
+
 function Projects() {
     const { t, i18n } = useTranslation()
     const enProjects = [
@@ -98,6 +105,20 @@ function Projects() {
             deployUrl: 'https://gs-portfolio.vercel.app/',
             repositoryUrl: 'https://github.com/gonsoria/gs-portfolio'
         },
+        {
+            id: 5,
+            title: 'Task Manager',
+            tech: ['javascript', 'react', 'redux', 'nodejs', 'express', 'postgresql', 'prisma'],
+            imageUrl: hometask,
+            imageAlt: 'Task Manager',
+            images: [hometask, register, folders, todolist2],
+            description: 'Single Page Application that allows you to create to-do items and folders to group them ',
+            myWork: 'A single page application that allows you to create tasks and manage them. Fullstack app, with backend develope with NodeJs, Express, PostgreSQL and Prisma. To-do items CRUD and user management. You can create an account, your password will be encrypted in the database.',
+            tags: ['fullstack', 'javascript', 'reactjs', 'bootstrap', 'css', 'backend', 'nodejs', 'database'],
+            color: 'black',
+            deployUrl: 'https://todo-manager-app.vercel.app/',
+            repositoryUrl: 'https://github.com/gonsoria/task-manager'
+        }
     ]
     const esProjects = [
         {
@@ -157,6 +178,21 @@ function Projects() {
             deployUrl: 'https://gs-portfolio.vercel.app/',
             repositoryUrl: 'https://github.com/gonsoria/gs-portfolio'
         },
+        {
+            id: 5,
+            title: 'Task Manager',
+            tech: ['javascript', 'react', 'redux', 'nodejs', 'express', 'postgresql', 'prisma'],
+            imageUrl: hometask,
+            imageAlt: 'Task Manager',
+            images: [hometask, register, folders, todolist2],
+            description: 'Aplicacion simple que te permite crear tareas y carpetas para agruparlas',
+            myWork: 'En esta aplicacion tenes la posibilidad de crear usuarios para administrar tareas personales y carpetas para agruparlas, las contraseñas son encriptadas en la base de datos para mayor seguridad. Se desarrollo el FrontEnd con ReacJS y Redux para el manejo de estados, se utilizo Boostrap para el estilo. El BackEnd se desarrollo con NodeJs, Express y la base de datos con PostgreSQL y Prisma.',
+            tags: ['fullstack', 'javascript', 'reactjs', 'bootstrap', 'css', 'backend', 'nodejs', 'database'],
+            color: 'black',
+            deployUrl: 'https://todo-manager-app.vercel.app/',
+            repositoryUrl: 'https://github.com/gonsoria/task-manager'
+        }
+
     ]
 
 
